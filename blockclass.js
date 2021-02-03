@@ -1,18 +1,21 @@
 class Block{
     constructor(x,y,width,height){
 var options={
-isStatic:true
+isStatic:false,
+friction:0.5
 }
-this.body=Body.rectangle(x,y,width,height);
+this.body=Bodies.rectangle(x,y,width,height,options);
 this.width=width;
 this.height=height;
-World.add(world,this,body);
+World.add(world,this.body);
 }
 
-display(color){
+display(){
 var pos=this.body.position;
 rectMode(CENTER);
-fill(color);
-rect(pos.x,pos.y,thiis.width,this.height);
+strokeWeight(2);
+stroke("lightBlue");
+fill("blue");
+rect(pos.x,pos.y,this.width,this.height);
 }
 }
