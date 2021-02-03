@@ -109,11 +109,3 @@ function mouseReleased(){
   gameState="launched";
 }
 
-function keyPressed(){
-
-  if (keyCode===32){
-    Body.setPosition(polygon.body,{x:200,y:300});
-    rope.attach(polygon.body);
-    gameState="onSling";
-  }
-}
