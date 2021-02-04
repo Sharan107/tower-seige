@@ -14,8 +14,6 @@ display(){
 var pos=this.body.position;
 rectMode(CENTER);
 strokeWeight(2);
-stroke("lightBlue");
-fill("blue");
 rect(pos.x,pos.y,this.width,this.height);
 }
 }
